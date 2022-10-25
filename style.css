@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 10% 10% 40%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 10px;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.center {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.right {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
